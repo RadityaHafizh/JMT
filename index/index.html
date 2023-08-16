@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMRS</title>
+  </head>
+  <body class="bg-slate-100">
+    <section class="max-h-screen overflow-hidden">
+      <div class="flex justify-start h-12 bg-slate-600 shadow-md">
+        <img src="../img/menu.png" width="30" class="mt-2 ml-2 mb-2 cursor-pointer" id="side-menu" />
+        <div class="flex flex-col">
+          <p class="my-auto ml-4 text-2xl">Transmedic</p>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="bg-slate-600 h-screen p-5 w-[20%] pt-8 -translate-x-full transform duration-300" id="aside">
+          <ul>
+            <li class="text-xl left-1">Registrasi Pasien</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="w-screen h-12 bg-green-400">
+      <nav>
+        <ul class="flex flex-row-reverse text-xl">
+          <li class="block py-2 pl-3 pr-4">
+            <a href="tes.html"> Home </a>
+          </li>
+          <li class="block py-2 pl-3 pr-4">
+            <a href="masuk/detail.html"> Detail </a>
+          </li>
+          <li class="block py-2 pl-3 pr-4">
+            <a href="masuk/about.html"> About </a>
+          </li>a
+        </ul>
+      </nav>
+    </div> -->
+
+    <script>
+      const aside = document.getElementById("side-menu");
+      const sideMenu = document.getElementById("aside");
+      aside.addEventListener("click", (e) => {
+        sideMenu.classList.toggle("translate-x-0");
+      });
+    </script>
+  </body>
+</html>
